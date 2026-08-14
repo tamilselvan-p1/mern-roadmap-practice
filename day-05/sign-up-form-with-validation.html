@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form With Validation</title>
+</head>
+<body>
+    <h1>Sign Up Form With Validation</h1>
+    <form action="">
+        <fieldset>
+        <legend>Account Details</legend>
+        <label for="name">Name</label>
+        <input id="name" type="text" required>
+<br>
+<br>
+        <label for="email">Email</label>
+        <input id="email" type="email" required>
+<br>
+<br>
+        <label for="password">Password</label>
+        <input id="password" type="password" required pattern=".{8,}" title="min 8 character">
+<br>
+<br>
+        <label for="age">Age</label>
+        <input id="age" type="number" min="13" max="60" title="only 13 - 60">
+</fieldset>
+<br>
+<br>
+        <label for="bday">Birthday</label>
+        <input id="bday" type="date">
+<br>
+<br>
+        <label for="checkbox">Agree to terms</label>
+        <input id="checkbox" type="checkbox">
+<br>
+<br>
+        <label for="gender">Gender</label>
+        <input id="gender" name="gender" type="radio" value="male">Male <input id="gender" name="gender" type="radio" value="female">Female
+<br>
+<br>
+        <label for="country">Country</label>
+        <select name="country" id="country">
+            <option value="india">India</option>
+            <option value="usa">USA</option>
+        </select>
+<br>
+<br>
+        <label for="msg">Message</label>
+        <textarea name="message" id="msg"></textarea>
+<br>
+<br>
+        <button>Submit</button>
+        
+        
+    </form>
+</body>
+</html>
