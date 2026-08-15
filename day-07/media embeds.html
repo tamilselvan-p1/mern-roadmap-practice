@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Embeds</title>
+</head>
+
+<body>
+    <h1>Video</h1>
+    <video src="1208094-hd_1920_1080_30fps.mp4" width="800px" height="400px" controls></video>
+    <h1>Audio</h1>
+    <audio src="oqu-flute-traditional-v1-251387.mp3" controls></audio>
+    <h1>YouTube video</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FYErehuSuuw?si=LOXeLy9-zgKP605h"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <h1>Website</h1>
+    <iframe src="https://en.wikipedia.org/wiki/HTML" frameborder="1" width="600" height="400"></iframe>
+    <h1>img for 2 different screen sizes</h1>
+    <picture>
+        <source media="(max-width: 600px)" srcset="red-flower.jpg">
+        <source media="(min-width: 601px)" srcset="lavender-flower.jpg">
+
+        <img src="white-flower.jpg" width="480" alt="image">
+    </picture>
+
+
+</body>
+
+</html>
