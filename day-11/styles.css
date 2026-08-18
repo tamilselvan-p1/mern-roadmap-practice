@@ -1,0 +1,27 @@
+.box {
+    width: 200px;
+    height: 150px;
+    border: 5px solid black;
+}
+.box {
+    width: 200px;
+    padding: 30px;
+    margin: 20px;
+    border: 5px;
+    border-style: solid;
+    border-color: black;
+}
+/*Fix:
+   box-sizing: border-box makes the declared width
+   include padding and border.*/
+*{
+    box-sizing: border-box;
+}
+/* 
+   Fix:
+   Reduced margin so the three boxes can fit
+   inside the available container width.
+*/
+.box {
+    margin: 10px;
+}
