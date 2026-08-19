@@ -1,0 +1,17 @@
+:root {
+    --primary: hsl(220, 70%, 45%);
+    --text: hsl(220, 20%, 15%);
+    --background: hsl(220, 20%, 97%);
+}
+body{
+    font-family: "Oswald", sans-serif;
+    background-color: var(--background);
+
+}
+h1{
+        color: var(--primary);
+}
+p{
+    line-height:24px;
+    color: var(--text);
+}
