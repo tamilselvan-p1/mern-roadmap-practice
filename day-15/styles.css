@@ -1,0 +1,25 @@
+h1:hover{
+    color: red;
+}
+h1::first-letter{
+    color: rgb(255, 81, 0);
+}
+h2:hover{
+    color: yellow;
+}
+h3:hover{
+    color: green;
+}
+input:focus{
+   background-color: aqua;
+   border: 5px solid red;
+}
+li:nth-child(odd){background-color: orange;
+
+}
+li::before{
+    content: "✅";
+}
+a:active{
+    color: blueviolet;
+}
