@@ -4,11 +4,41 @@ body{
 header h1 {
     font-size: 24px;
     text-align: center;
+
+}
+header hr{
+    height: 3px;
+    background-color: black;
+    border-radius: 5px;
+        animation-name: line;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+}
+@keyframes line {
+    0%{
+        background-color: black;
+
+    }
+    50%{
+        background-color: gold;
+    }
+    75%{
+        background-color: black;
+    }
+    100%{
+        background-color: silver;
+
+    }
+    
 }
 
 header nav {
     background-color: gray;
     font-size: 13px;
+    border-radius: 10px;
 
 }
 
@@ -45,6 +75,7 @@ header ul {
 header div img {
     width: 100%;
     height: auto;
+    border-radius: 10px;
 }
 
 
@@ -68,15 +99,26 @@ th,
 tr,
 td {
     border: 2px solid black;
+    border-radius: 5px;
 
+}
+section{
+    background-color: lightblue;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
 }
 .contact form{
     display: flex;
     flex-direction: column;
     gap: 5px;
-    width: 400px;
+    width: 100%;
 
 }
+.contact form input,button{
+    height: 30px;
+}
+
 
 
 @media screen and (min-width:768px) {
@@ -86,6 +128,8 @@ td {
 
     header nav {
         font-size: 18px;
+        position: sticky;
+        top: 0px;
     }
 
     header nav ol {
@@ -97,12 +141,13 @@ td {
 
     header nav ol a h3 {
         margin-left: 60px;
-        margin-right: 10px;
+        margin-right: 5px;
 
     }
 
     header nav ol a:hover {
         background-color: black;
+        transition-duration: 2s;
     }
 
     header ul {
@@ -116,6 +161,9 @@ td {
     header div {
         display: flex;
         justify-content: center;
+    }
+    header div img:hover{
+        width: 52%;
     }
 
     main h2 {
@@ -134,6 +182,10 @@ td {
     main section iframe {
         width: 50%;
         height: 400px;
+        border-radius: 10px;
 
+    }
+    .contact form {
+        width: 50%;
     }
 }
