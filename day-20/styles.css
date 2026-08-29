@@ -1,0 +1,16 @@
+:root{
+    --bg-color:blue;
+    --primary-color: yellow;
+    --text-color: white;
+    --text-size: 30px;
+}
+.container1,.container2{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    p{
+        color: var(--primary-color);
+        font-size: var(--text-size);
+    }
+    font-size: var(--text-size);
+
+}
