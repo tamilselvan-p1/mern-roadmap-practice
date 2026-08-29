@@ -18,7 +18,7 @@
         <nav aria-label="table of contents about web development">
 
             <ol>
-                <a href="#1">
+                <a href="#1" class="intro">
                     <h3>
                         <li>Introduction</li>
                     </h3>
@@ -38,7 +38,7 @@
                         <li>JavaScript Basics</li>
                     </h3>
                 </a>
-                <a href="#5">
+                <a href="#6">
                     <h3>
                         <li>Conclusion</li>
                     </h3>
@@ -50,7 +50,7 @@
             <li>CSS</li>
             <li>JavaScript</li>
         </ul>
-        <img src="images.jpg" alt="Web development image">
+        <div><img src="images.jpg" alt="Web development image"></div>
     </header>
     <main class="hero">
         <section id="1">
@@ -472,15 +472,16 @@ greetMe();</code></pre>
                 </tr>
             </tbody>
         </table>
-        <section>
+        <section id="5">
             <h1>YouTube video</h1>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/FYErehuSuuw?si=LOXeLy9-zgKP605h"
+            <div  class="video-section">  <iframe width="100%" height="auto" src="https://www.youtube.com/embed/FYErehuSuuw?si=LOXeLy9-zgKP605h"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+          
         </section>
 
-        <section id="5">
+        <section id="6">
             <h2><em>Conclusion</em></h2>
             <article>
                 <blockquote>
@@ -509,22 +510,19 @@ greetMe();</code></pre>
         </section>
     </main>
     <hr>
-    <section id="contact">
+    <section id="contact" class="contact">
         <h2>Contact Me</h2>
 
         <form action="">
             <label for="name">Name</label>
             <input id="name" type="text" required>
-            <br>
-            <br>
+            
             <label for="email">Email</label>
             <input id="email" type="email" required>
-            <br>
-            <br>
+            
             <label for="message">Message</label>
             <textarea name="message" id="message" required></textarea>
-            <br>
-            <br>
+            
             <button type="submit">Send</button>
         </form>
     </section>
