@@ -4,6 +4,9 @@ const list = document.getElementById("skillsList")
       
 const skills =[]
 function add(){
+    if (input.value.trim() === "") {
+    return;
+}
  const newItem = document.createElement('li')
  const remove = document.createElement('button')  
     newItem.textContent = input.value
@@ -13,6 +16,8 @@ function add(){
     remove.onclick = function (){
         newItem.remove()
         remove.remove()
+        
 
     }
+    
 }
