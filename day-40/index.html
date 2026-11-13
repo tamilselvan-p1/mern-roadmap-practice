@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>User Details</h1>
+
+    <form id="userForm">
+
+        <input type="text" id="name" placeholder="Enter name">
+
+        <input type="email" id="email" placeholder="Enter email">
+
+        <input type="number" id="age" placeholder="Enter age">
+
+        <input type="number" id="phone" placeholder="Enter phone number">
+        
+        <div>
+            <label for="darkmode">Dark Mode</label>
+            <input type="checkbox" name="darkmode" id="darkmode">
+        </div>
+        
+        <button type="submit">Save Details</button>
+
+    </form>
+    <button id="clearBtn">Clear Saved Data</button>
+
+    <p id="message"></p>
+
+    <h1>Saved Users</h1>
+    <ul id="usersList"></ul>
+    <script src="script.js"></script>
+</body>
+</html>
